@@ -9,9 +9,9 @@ let apiKeys = {
 
 let meetConfig = {
     apiKey: apiKeys.apiKey,
-    leaveUrl: "https://zoom.us/",
+    leaveUrl: "https://ps-xmas-zoom.netlify.app",
     meetingNumber: "94800471949",
-    userName: "Example",
+    userName: "Jane Doe",
     userEmail: "example@example.com",
     passWord: "0hZeCd",
     role: 0,
