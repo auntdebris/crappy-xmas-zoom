@@ -1,0 +1,122 @@
+html,
+body {
+  overflow: visible;
+  min-width: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+input {
+  font-family: sans-serif;
+}
+
+input[type="text"] {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.-lazy {
+  min-height: 1px;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.777778px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:not(.-plain) {
+    display: inline-block;
+    appearance: none;
+    border: 0;
+    border-radius: 62px;
+    padding: 7px 40px;
+    line-height: 1.7em;
+    background: white;
+
+    &.-red {
+      background: #fe414d;
+      color: white;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+.-visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+h2 {
+  font-family: futura-pt, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  @media only screen and (min-width: 768px) and (orientation: portrait) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (min-width: 980px) and (orientation: landscape) {
+    font-size: 1.7rem;
+  }
+}
+
+p {
+  &.-medium {
+    font-size: 1.1rem;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &.-large {
+    font-size: 1.25rem;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 1.75rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+  }
+}

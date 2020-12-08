@@ -1,0 +1,26 @@
+@import "../../styles/mixins.scss";
+
+.Placeholder {
+  @include fullbleedAbs();
+}
+
+.Placeholder__bg {
+  @include fullbleedAbs();
+  background: url("/assets/images/placeholder-small.jpg");
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+
+  @media only screen and (min-width: 600px) {
+    background-image: url("/assets/images/placeholder-medium.jpg");
+  }
+
+  @media only screen and (orientation: landscape) {
+    background-image: url("/assets/images/placeholder-large.jpg");
+  }
+
+  &.-loaded {
+    opacity: 1;
+  }
+}

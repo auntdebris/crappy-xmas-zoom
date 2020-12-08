@@ -1,11 +1,9 @@
 import React from "react";
-import ZoomMeeting from "./components/ZoomMeeting";
+import "./App.scss";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <ZoomMeeting />
-  );
+  return <Home />;
 }
-
 
 export default App;

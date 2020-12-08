@@ -1,0 +1,40 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/colors.scss";
+
+.Party {
+  @include fullbleedAbs();
+  background: $red;
+}
+
+.Party__video {
+  @include fullbleedAbs();
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  &.-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.Party__kuula {
+  @include fullbleedAbs();
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
+
+  &.-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
