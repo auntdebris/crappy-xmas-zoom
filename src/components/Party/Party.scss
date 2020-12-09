@@ -55,7 +55,6 @@
   display: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
 
   @media only screen and (min-width: 768px) {
     display: block;
@@ -72,13 +71,14 @@
   &.-visible {
     visibility: visible;
     opacity: 1;
+    transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
   }
 }
 
 .Party_nsss-logo {
   display: inline-block;
   position: absolute;
-  bottom: 105px;
+  top: 10px;
   left: 10px;
 
   img {

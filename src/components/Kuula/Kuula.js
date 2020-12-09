@@ -2,7 +2,7 @@ import React from "react";
 import "./Kuula.scss";
 
 const autoLoadUrl =
-  "https://kuula.co/share/collection/7PV0J?fs=0&vr=1&sd=1&thumbs=1&info=0&logo=-1";
+  "https://kuula.co/share/collection/7PV0J?fs=0&vr=1&sd=1&thumbs=-1&info=0&logo=-1";
 // const introScreenUrl =
 //   "https://kuula.co/share/collection/7PV0J?fs=1&vr=1&sd=1&initload=0&thumbs=1&info=0&logo=-1";
 
