@@ -9,9 +9,9 @@ const autoLoadUrl =
 const Kuula = () => {
   return (
     <div className="Kuula">
+      {/* eslint-disable-next-line */}
       <iframe
         src={autoLoadUrl}
-        title=""
         width="100%"
         height="100%"
         style={{

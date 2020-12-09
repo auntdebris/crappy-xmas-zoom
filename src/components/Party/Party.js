@@ -72,6 +72,7 @@ const Party = () => {
           href="https://www.notsosecretsanta.co.uk/"
           className="Party_nsss-logo"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/nsss-logo.png`}
