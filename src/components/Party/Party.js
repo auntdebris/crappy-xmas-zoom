@@ -25,6 +25,8 @@ const Party = () => {
   };
 
   const onBeforeEnded = (e) => {
+    const chatElem = document.getElementById("chat");
+    chatElem.classList.add("-visible");
     setVideoEnded(true);
   };
 
@@ -66,6 +68,16 @@ const Party = () => {
 
       <div className={`Party__kuula ${videoEnded ? "-visible" : ""}`}>
         <Kuula />
+        <a
+          href="https://www.notsosecretsanta.co.uk/"
+          className="Party_nsss-logo"
+          target="_blank"
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/nsss-logo.png`}
+            alt="Visit Not So Secret Santa"
+          />
+        </a>
       </div>
     </section>
   );

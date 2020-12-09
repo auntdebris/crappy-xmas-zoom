@@ -32,9 +32,56 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
+  background: $red;
+
+  iframe {
+    @media only screen and (min-width: 768px) {
+      width: calc(100% - 375px) !important;
+    }
+  }
 
   &.-visible {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.Party__chat {
+  position: absolute;
+  width: 375px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+
+  > div,
+  iframe {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
+  }
+
+  &.-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.Party_nsss-logo {
+  display: inline-block;
+  position: absolute;
+  bottom: 105px;
+  left: 10px;
+
+  img {
+    width: 170px;
   }
 }

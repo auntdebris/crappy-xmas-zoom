@@ -11,7 +11,7 @@ const Kuula = () => {
     <div className="Kuula">
       <iframe
         src={autoLoadUrl}
-        title="360 Party Experience"
+        title=""
         width="100%"
         height="100%"
         style={{

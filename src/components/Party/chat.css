@@ -1,0 +1,112 @@
+.mobileSidebar > hr {
+  display: none;
+}
+
+.chat-header strong:after {
+  content: "Crappy Christmas Chat";
+}
+
+.chat-header em {
+  display: none;
+}
+
+.modal .animation-content .modal-card {
+  margin: 0 20px;
+  width: auto;
+}
+
+.emojiButton {
+  display: none;
+}
+
+.invite-button {
+  display: none;
+}
+
+.hints {
+  visibility: hidden;
+}
+
+.profile-section.columns strong + br {
+  display: none;
+}
+
+.profile-section.columns.is-gapless > .column {
+  width: auto;
+  margin-right: 20px;
+}
+
+.profile-section button:first-child {
+  background: transparent;
+  color: white;
+  border: 0;
+  margin: 12px;
+}
+
+.mobileSidebar {
+  overflow: hidden !important;
+}
+
+.modal-card-body {
+  border-radius: 0 0 6px 6px;
+}
+
+.modal-card-body .column:nth-child(2) {
+  display: none;
+}
+
+.modal-card-body .b-tabs .column:nth-child(2) {
+  display: block;
+}
+
+.modal-card-body .b-tabs .field {
+  display: none;
+}
+
+.button.editProfileButton {
+  display: none;
+}
+
+.buttons.are-small {
+  margin-left: 20px;
+}
+
+.button.is-small {
+  font-size: 0.73rem;
+  line-height: 0.9;
+  margin-top: 0 !important;
+}
+
+.button.is-info,
+.button.is-info:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.button.is-success,
+.button.is-success:hover {
+  background: rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+}
+
+.button.editProfileButtons,
+.button.editProfileButtons:hover {
+  display: none;
+}
+
+.subtitle small {
+  font-weight: bold;
+  display: block;
+}
+
+.profile-section .column {
+  display: flex;
+}
+
+.profile-section .column strong:first-child {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.modal-card-foot {
+  display: none;
+}
