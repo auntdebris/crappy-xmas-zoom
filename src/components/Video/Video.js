@@ -1,19 +1,5 @@
 import React from "react";
-
-const isIosDevice = () => {
-  return (
-    [
-      "iPad Simulator",
-      "iPhone Simulator",
-      "iPod Simulator",
-      "iPad",
-      "iPhone",
-      "iPod",
-    ].includes(navigator.platform) ||
-    // iPad on iOS 13 detection
-    (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-  );
-};
+import isIosDevice from "../../utils/isIosDevice";
 
 const Video = ({ onCanPlayThrough, videoSize }) => (
   <video

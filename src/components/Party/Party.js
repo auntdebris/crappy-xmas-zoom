@@ -83,7 +83,11 @@ const Party = () => {
         {videoSize === "large" && <Video {...videoProps} videoSize="large" />}
       </div>
 
-      <div className={`Party__kuula ${videoEnded ? "-visible" : ""}`}>
+      <div
+        className={`Party__kuula ${videoEnded ? "-visible" : ""} ${
+          isIosDevice() ? "ios" : ""
+        }`}
+      >
         <Kuula />
         <a
           href="https://www.notsosecretsanta.co.uk/"
