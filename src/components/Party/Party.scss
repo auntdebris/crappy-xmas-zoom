@@ -83,6 +83,18 @@
   }
 }
 
+.Party__chat-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background: url("/assets/images/close-button.png") center center no-repeat;
+  background-color: #222222;
+  background-size: contain;
+}
+
 .Party_nsss-logo {
   display: inline-block;
   position: absolute;

@@ -44,12 +44,29 @@ const Party = () => {
     onCanPlayThrough,
   };
 
+  const openChat = () => {
+    document.body.classList.remove("chat-closed");
+  };
+
+  const closeChat = () => {
+    document.body.classList.add("chat-closed");
+  };
+
   useEffect(() => {
     window.addEventListener("resize", onResize);
     onResize();
 
+    document.getElementById("chat-close").addEventListener("click", closeChat);
+    document.getElementById("chat-open").addEventListener("click", openChat);
+
     return () => {
       window.removeEventListener("resize", onResize);
+      document
+        .getElementById("chat-close")
+        .removeEventListener("click", closeChat);
+      document
+        .getElementById("chat-open")
+        .removeEventListener("click", openChat);
     };
   });
 
