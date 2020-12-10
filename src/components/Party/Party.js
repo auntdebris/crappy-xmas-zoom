@@ -3,6 +3,7 @@ import objectFitVideos from "object-fit-videos";
 import "./Party.scss";
 import Kuula from "../Kuula";
 import Video from "../Video";
+import isIosDevice from "../../utils/isIosDevice";
 
 const Party = () => {
   const [videoSize, setVideoSize] = useState("small");
