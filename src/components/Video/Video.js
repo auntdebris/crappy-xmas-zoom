@@ -22,6 +22,8 @@ const Video = ({ onCanPlayThrough, videoSize }) => (
     muted
     autoPlay={isIosDevice()}
     onCanPlayThrough={onCanPlayThrough}
+    preload
+    playsInline
   >
     <source
       src={`${process.env.PUBLIC_URL}/assets/video/video-${videoSize}.mp4`}
