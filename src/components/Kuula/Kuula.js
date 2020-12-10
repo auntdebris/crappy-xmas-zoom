@@ -25,6 +25,12 @@ const Kuula = () => {
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         scrolling="no"
       ></iframe>
+      <button className="Kuula__open-chat">
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/chat-button.png`}
+          alt="Open chat panel"
+        />
+      </button>
     </div>
   );
 };

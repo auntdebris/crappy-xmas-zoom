@@ -4,3 +4,23 @@
   @include fullbleedAbs();
   border: none;
 }
+
+.Kuula__open-chat {
+  position: absolute;
+  width: 144px;
+  bottom: 20px;
+  right: 405px;
+  display: none;
+
+  img {
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) and (min-height: 500px) {
+    display: block;
+
+    .chat-closed & {
+      display: none;
+    }
+  }
+}
