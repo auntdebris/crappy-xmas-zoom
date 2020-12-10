@@ -73,7 +73,11 @@ const Party = () => {
 
   return (
     <section className="Party">
-      <div className={`Party__video ${videoLoaded ? "-visible" : ""}`}>
+      <div
+        className={`Party__video ${
+          videoLoaded || isIosDevice() ? "-visible" : ""
+        }`}
+      >
         {/*
           Source cannot be updated dynamically on resize,
           so we have to rerender the whole video element
